@@ -2,16 +2,26 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
 }
 .home__image{
     width: 100%;
     mask-image: linear-gradient(to bottom,rgb(255, 255, 255,1), rgba(255, 5, 5, 0)) !important;
     z-index: -1;
-    margin-bottom: -150px
+    margin-bottom: -150px;
 }
 .home__row{
     display: flex;
+    /* flex-flow: wrap row; */
     z-index: 1;
     margin-left: 5px;
     margin-right:5px ;
 }
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .home__row{
+        display: flex;
+    flex-flow: row wrap
+    }
+  }
+  
